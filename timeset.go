@@ -53,7 +53,7 @@ func DetermineNtpHost(host string) string {
 					return host
 				}
 			}
-			fmt.Printf("Ntp-Server by name of the executable: %s\n", host)
+			fmt.Printf("Ntp-Server by name of the executable: %s\n", potentialMaskedIpOrHost)
 			return potentialMaskedIpOrHost
 		}
 	}
