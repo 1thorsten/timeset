@@ -62,7 +62,7 @@ func DetermineNtpHost(host string) string {
 
 func HostWithFormatInformation(baseName string, host string) string {
 	fmt.Println("Specify time server by")
-	fmt.Printf("- argument '%s [ntp-server]'\n", os.Args[0])
+	fmt.Printf("- argument '%s [ntp-server - e.g. pool.ntp.org]'\n", os.Args[0])
 	fmt.Printf("- exe-name '%s_10_10_0_1.exe\n", baseName)
 	fmt.Printf("- exe-name '%s_pool_nt_org.exe\n", baseName)
 	return host
@@ -70,7 +70,7 @@ func HostWithFormatInformation(baseName string, host string) string {
 
 func main() {
 	if operatingSystem := runtime.GOOS; operatingSystem != "windows" {
-		fmt.Printf("invalid OperatingSystem (%s). Only windows is allowed\n", operatingSystem)
+		fmt.Printf("invalid os (%s). Only windows is allowed\n", operatingSystem)
 		os.Exit(1)
 	}
 
