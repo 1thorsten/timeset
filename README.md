@@ -16,7 +16,6 @@ timeset will help you if your computer is not able to keep the current time (CMO
 Of course, you can buy a new battery and replace it. My tip: Save your money and time and use timeset
 
 # Usage
-!! timeset must be started with administrator rights (otherwise system time and date cannot be set) .!!!
 1. take the standard ntp server (pool.ntp.org)
 ```bash
 timeset.exe 
@@ -35,6 +34,8 @@ timeset_ntp_pool_org.exe
 timeset_10_10_1_1.exe
 ```
 
+!! timeset must be started with administrator rights (otherwise system time and date cannot be set) .!!!
+![set admin rights](https://github.com/1thorsten/timeset/blob/master/run_as_admin.png)
 
-
+# Download
 You can also just download the latest release from [here](https://github.com/1thorsten/timeset/releases).
