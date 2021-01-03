@@ -3,12 +3,12 @@ Utility to set time and date from an NTP server (windows)
 
 # Build (for Windows only)
 ```bash
-GOOS=windows GOARCH=amd64 go build -o timeset.exe timeset.go
+make build
 ```
-or
+or (on Windows; otherwise this makes no sense)
 
 ```bash
-GOOS=windows GOARCH=amd64 go install
+make install
 ```
 
 # Introduction
