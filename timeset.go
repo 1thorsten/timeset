@@ -13,6 +13,7 @@ import (
 const (
 	fallbackNtpHost = "pool.ntp.org"
 	defaultFilename = "timeset"
+	VERSION         = "1.0.2"
 )
 
 // DetermineNtpHost by
@@ -67,8 +68,6 @@ func HostWithFormatInformation(baseName string, host string) string {
 	fmt.Printf("- exe-name '%s_pool_nt_org.exe\n", baseName)
 	return host
 }
-
-const VERSION = "1.0.2"
 
 func main() {
 	fmt.Printf("timeset version: %s\n", VERSION)
