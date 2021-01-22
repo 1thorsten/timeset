@@ -68,9 +68,13 @@ func HostWithFormatInformation(baseName string, host string) string {
 	return host
 }
 
+const VERSION = "1.0.1"
+
 func main() {
+	fmt.Printf("timeset version: %s\n", VERSION)
+
 	if operatingSystem := runtime.GOOS; operatingSystem != "windows" {
-		fmt.Printf("invalid os (%s). Only windows is allowed\n", operatingSystem)
+		fmt.Printf("invalid os (%s). Only windows is allowed.\n", operatingSystem)
 		os.Exit(1)
 	}
 
