@@ -1,7 +1,8 @@
-# timeset
-Utility to set time and date from an NTP server (windows)
+# timeset (for Windows only)
+timeset will help you if your computer is not able to keep the current time (CMOS battery has run out of power).
+Of course, you can buy a new battery and replace it. My tip: Save your money and time and use timeset
 
-# Build (for Windows only)
+# Build
 ```bash
 make build
 ```
@@ -10,10 +11,6 @@ or (on Windows; otherwise this makes no sense)
 ```bash
 make install
 ```
-
-# Introduction
-timeset will help you if your computer is not able to keep the current time (CMOS battery has run out of power).
-Of course, you can buy a new battery and replace it. My tip: Save your money and time and use timeset
 
 # Usage
 1. take the standard ntp server (pool.ntp.org)
