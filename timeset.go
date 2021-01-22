@@ -68,7 +68,7 @@ func HostWithFormatInformation(baseName string, host string) string {
 	return host
 }
 
-const VERSION = "1.0.1"
+const VERSION = "1.0.2"
 
 func main() {
 	fmt.Printf("timeset version: %s\n", VERSION)
