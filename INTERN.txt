@@ -1,0 +1,8 @@
+## golang / update dependencies
+# list
+go list -m -u all
+# update
+go get -u all
+
+## mod graph
+

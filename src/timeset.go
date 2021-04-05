@@ -1,19 +1,22 @@
 package main
 
 import (
+	_ "embed"
 	"fmt"
 	"net"
 	"os"
 	"path"
 	"runtime"
 	"strings"
-	"timeset/handleTime"
+	"timeset/src/handleTime"
 )
+
+//go:embed VERSION.txt
+var version string
 
 const (
 	fallbackNtpHost = "pool.ntp.org"
 	defaultFilename = "timeset"
-	VERSION         = "1.0.2"
 )
 
 // DetermineNtpHost by
@@ -70,7 +73,8 @@ func HostWithFormatInformation(baseName string, host string) string {
 }
 
 func main() {
-	fmt.Printf("timeset version: %s\n", VERSION)
+	version = strings.TrimSuffix(version, "\n")
+	fmt.Printf("timeset version: %s\n", version)
 
 	if operatingSystem := runtime.GOOS; operatingSystem != "windows" {
 		fmt.Printf("invalid os (%s). Only windows is allowed.\n", operatingSystem)
