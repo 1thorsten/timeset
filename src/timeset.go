@@ -38,7 +38,7 @@ func DetermineNtpHost(host string) string {
 		name := base[:len(base)-3]
 		// timeset_192_168_178_1.exe
 		exeName := os.Args[0]
-		// exeName = "timeset_pool_ntp_or.exe"
+		// exeName = "timeset_pool_ntp_org.exe"
 		suffix := path.Ext(exeName)
 
 		// look for time_set_ (e.g. timeset_192_168_178_1.exe)
