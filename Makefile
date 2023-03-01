@@ -1,5 +1,5 @@
 update_dependencies:
-	go get -u all
+	go get -u -t ./...
 
 build: bin
 	GOOS=windows GOARCH=amd64 go build -ldflags="-s -w" -o bin/timeset.exe ./src
