@@ -2,8 +2,6 @@ module timeset
 
 go 1.24.1
 
-toolchain go1.24.1
-
 require github.com/beevik/ntp v1.4.3
 
 require (
